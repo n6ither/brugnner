@@ -1,0 +1,102 @@
+<div *ngIf="!mobile" class="shortcuts">
+    <div class="row">
+        <div class="col-4">
+            <a routerLink="/about-me">
+                <nb-icon icon="person-outline" class="icon-4rem" status="info"></nb-icon>
+                <h5>ABOUT ME</h5>
+            </a>
+            <p>Check my resume. It will take you 30 seconds haha (crying inside).</p>
+        </div>
+        <div class="col-4">
+            <a routerLink="/posts">
+                <nb-icon icon="edit-outline" class="icon-4rem" status="danger"></nb-icon>
+                <h5>POSTS</h5>
+            </a>
+            <p>Read all my posts. Or three or two..</p>
+        </div>
+        <div class="col-4">
+            <a routerLink="/posts/tags/all">
+                <nb-icon icon="hash-outline" class="icon-4rem" status="warning"></nb-icon>
+                <h5>TAGS</h5>
+            </a>
+            <p>Check all the tags. You can find related posts clicking on them.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <a routerLink="/posts/latest">
+                <nb-icon icon="clock-outline" class="icon-4rem" status="primary"></nb-icon>
+                <h5>LATEST POST</h5>
+            </a>
+            <p>Check the most recent post.</p>
+        </div>
+        <div class="col-4">
+            <a routerLink="/posts/random">
+                <nb-icon icon="shuffle-outline" class="icon-4rem" status="danger"></nb-icon>
+                <h5>RANDOM POST</h5>
+            </a>
+            <p>Check the most random post. No, seriously.</p>
+        </div>
+        <div class="col-4">
+            <a routerLink="/posts/how-does-it-work">
+                <nb-icon icon="code-outline" class="icon-4rem" status="info"></nb-icon>
+                <h5>HOW DOES IT WORK?</h5>
+            </a>
+            <p>Will it blend? I mean, check the tech involved in this site.</p>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="mobile" class="shortcuts">
+    <div class="row">
+        <div class="col-6">
+            <a routerLink="/about-me">
+                <nb-icon icon="person-outline" class="icon-4rem" status="info"></nb-icon>
+                <h5>ABOUT ME</h5>
+            </a>
+            <p>Check my resume. It will take you 30 seconds haha (crying inside).</p>
+        </div>
+        <div class="col-6">
+            <a routerLink="/posts">
+                <nb-icon icon="edit-outline" class="icon-4rem" status="danger"></nb-icon>
+                <h5>POSTS</h5>
+            </a>
+            <p>Read all my posts. Or three or two..</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-6">
+            <a routerLink="/posts/tags/all">
+                <nb-icon icon="hash-outline" class="icon-4rem" status="warning"></nb-icon>
+                <h5>TAGS</h5>
+            </a>
+            <p>Check all the tags. You can find related posts clicking on them.</p>
+        </div>
+        <div class="col-6">
+            <a routerLink="/posts/latest">
+                <nb-icon icon="clock-outline" class="icon-4rem" status="primary"></nb-icon>
+                <h5>LATEST POST</h5>
+            </a>
+            <p>Check the most recent post.</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-6">
+            <a routerLink="/posts/random">
+                <nb-icon icon="shuffle-outline" class="icon-4rem" status="danger"></nb-icon>
+                <h5>RANDOM POST</h5>
+            </a>
+            <p>Check the most random post. No, seriously.</p>
+        </div>
+        <div class="col-6">
+            <a routerLink="/posts/how-does-it-work">
+                <nb-icon icon="code-outline" class="icon-4rem" status="info"></nb-icon>
+                <h5>HOW DOES IT WORK?</h5>
+            </a>
+            <p>Will it blend? I mean, check the tech involved in this site.</p>
+        </div>
+    </div>
+</div>

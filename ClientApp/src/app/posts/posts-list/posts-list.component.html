@@ -1,0 +1,22 @@
+<div class="col-md-10 offset-md-1 col-12 offset-0">
+    <h1>Posts</h1>
+    <nb-list>
+        <nb-list-item *ngFor="let post of postCardData.posts">
+            <post-list-item [post]="post"></post-list-item>
+        </nb-list-item>
+
+        <nb-list-item *ngFor="let _ of postCardData.placeholders">
+            <post-placeholder></post-placeholder>
+        </nb-list-item>
+
+        <nb-list-item class="text-center">
+            <button nbButton (click)="loadNext(postCardData)">Load more..</button>
+        </nb-list-item>
+
+        <nb-list-item class="text-center mt-5">
+            <hr>
+            <h6>All the tags</h6>
+            <app-tags></app-tags>
+        </nb-list-item>
+    </nb-list>
+</div>

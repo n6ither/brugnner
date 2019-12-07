@@ -1,0 +1,8 @@
+<span class="created-by">{{year}} <span class="copyleft">&copy;</span> All wrongs reserved</span>
+
+<div class="socials">
+    <a href="https://github.com/n6ither" target="_blank" class="ion ion-social-github"></a>
+    <a href="https://www.linkedin.com/in/nbrugnoni/" target="_blank" class="ion ion-social-linkedin"></a>
+    <a *ngIf="!authService.loggedIn" routerLink="/auth/login" class="ion ion-android-lock"></a>
+    <a *ngIf="authService.loggedIn" routerLink="/auth/logout" class="ion ion-android-unlock"></a>
+</div>

@@ -1,0 +1,22 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a class="logo" routerLink="/home">
+      <nb-icon icon="activity-outline"></nb-icon> Brugnner
+    </a>
+  </div>
+</div>
+
+<div class="header-container">
+  <nb-actions size="small">
+    <nb-action class="control-item">
+      <nb-search type="modal-move"></nb-search>
+    </nb-action>
+
+    <nb-action class="control-item control-item-right">
+      <a routerLink="/about-me" class="about-me">
+        <nb-user size="large" name="Nery Brugnoni" title="About me" [picture]="picture64" [onlyPicture]="userPictureOnly">
+        </nb-user>
+      </a>
+    </nb-action>
+  </nb-actions>
+</div>

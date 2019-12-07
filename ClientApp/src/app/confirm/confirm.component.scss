@@ -1,0 +1,15 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/breakpoints';
+@import '../theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card {
+    min-width: 600px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    nb-card {
+        min-width: 85vw;
+      }
+  }
+}

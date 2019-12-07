@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0">
+        <nb-card accent="danger" *ngIf="authService.loggedIn">
+            <nb-card-header>Admin</nb-card-header>
+            <nb-card-body>
+                <a nbButton status="danger" outline size="giant" routerLink="/admin">To the admin cave!</a>
+            </nb-card-body>
+        </nb-card>
+
+        <nb-card accent="primary">
+            <nb-card-header>Hello</nb-card-header>
+
+            <nb-card-body>
+
+                <div class="text-center">
+                    <img src="assets/images/brugnner.logo.jpg" alt="Brugnner logo black cat writing">
+                    <p>– Wouldn't be a shame if your favorite character gets killed?</p>
+                </div>
+
+                <div class="mb-3 mt-3 text-justify">
+                    <p>Some lorem introduction ipsum over here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <h6>What you can do here?</h6>
+                <p>Not much but.. here are some shortcuts :)</p>
+
+                <app-shortcuts></app-shortcuts>
+
+                <p class="mt-5">
+                    <nb-toggle status="basic" (checkedChange)="toggleDarkTheme()">Switch the lights</nb-toggle>
+                </p>
+            </nb-card-body>
+
+            <nb-card-footer>
+                <code>I'm working on this page</code>
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>

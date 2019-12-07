@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Post>
+  <Id>72cc1708-d173-4f28-8b41-31bd1d637e00</Id>
+  <Title>aaaaaaaaaaaaaaaaaaaa</Title>
+  <Excerpt>aaaaaaaaaaaaaaaaaaa</Excerpt>
+  <Content>&lt;p&gt;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&lt;/p&gt;
+</Content>
+  <Slug>aaaaaaaaaaaaaaaaaaaa</Slug>
+  <Tags>
+    <Tag>aaa</Tag>
+  </Tags>
+  <CreatedAt>2019-12-03T22:28:52.7529556-03:00</CreatedAt>
+  <UpdatedAt p2:nil="true" xmlns:p2="http://www.w3.org/2001/XMLSchema-instance" />
+  <IsPublished>true</IsPublished>
+</Post>

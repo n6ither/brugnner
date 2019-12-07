@@ -1,0 +1,369 @@
+<div class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0">
+        <nb-card id="top" accent="primary">
+            <nb-card-body class="links">
+                <button nbButton status="primary" outline [ngx-scroll-to]="'#about-me'" [ngx-scroll-to-offset]="-100">
+                    <nb-icon icon="arrowhead-down-outline"></nb-icon>AboutMe
+                </button>
+                <button nbButton status="primary" outline [ngx-scroll-to]="'#expertise'" [ngx-scroll-to-offset]="-100">
+                    <nb-icon icon="arrowhead-down-outline"></nb-icon>Expertise
+                </button>
+                <button nbButton status="primary" outline [ngx-scroll-to]="'#what-i-can-do'" [ngx-scroll-to-offset]="-100">
+                    <nb-icon icon="arrowhead-down-outline"></nb-icon>WhatICanDo
+                </button>
+                <button nbButton status="primary" outline [ngx-scroll-to]="'#recent-work'" [ngx-scroll-to-offset]="-100">
+                    <nb-icon icon="arrowhead-down-outline"></nb-icon>RecentWork
+                </button>
+                <button nbButton status="primary" outline [ngx-scroll-to]="'#resume'" [ngx-scroll-to-offset]="-100">
+                    <nb-icon icon="arrowhead-down-outline"></nb-icon>Resume
+                </button>
+                <button nbButton status="primary" outline [ngx-scroll-to]="'#contact'" [ngx-scroll-to-offset]="-100">
+                    <nb-icon icon="arrowhead-down-outline"></nb-icon>Contact
+                </button>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0">
+        <nb-card accent="primary">
+            <nb-card-header id="about-me">ABOUT ME</nb-card-header>
+            <nb-card-body class="text-justify">
+                <p>Energetic and passionate, with 5+ years of experience developing clean and robust code focused on the customer's need. A great team player constantly on training. A good practice enthusiast focused on the results and the process.</p>
+                <p>Outside the software world I enjoy a really good piece of art, whether it's music, a book or a movie. Long live to those things that make you turn your view away for a moment and to think deeply. And of course, a great dinner at a fancy restaurant here and there.</p>
+
+                <img src="../../assets/cv/img/me-and-ixion.jpg" alt="Me and Ixion, my cat." width="100%" class="mb-3">
+
+                <p>That's me and Ixion.. a little demon with cat shape.</p>
+            </nb-card-body>
+            <nb-card-footer>
+                <button fullWidth nbButton status="primary" outline size="tiny" [ngx-scroll-to]="'#top'" [ngx-scroll-to-offset]="-100" nbTooltip="Go up">
+                    <nb-icon icon="arrowhead-up-outline"></nb-icon>
+                </button>
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0">
+        <nb-card accent="primary">
+            <nb-card-header id="expertise">EXPERTISE</nb-card-header>
+            <nb-card-body>
+                <nb-progress-bar [value]="85" status="success">Object-oriented programming</nb-progress-bar>
+                <nb-progress-bar [value]="80" status="success">C# & .NET | .NET Core</nb-progress-bar>
+                <nb-progress-bar [value]="75" status="success">SQL | Entity Framework</nb-progress-bar>
+                <nb-progress-bar [value]="65" status="warning">RESTful API</nb-progress-bar>
+                <nb-progress-bar [value]="50" status="warning">HTML | CSS | Javascript</nb-progress-bar>
+                <nb-progress-bar [value]="40" status="danger">Angular</nb-progress-bar>
+                <nb-progress-bar [value]="30" status="danger">Azure</nb-progress-bar>
+
+                <div class="text-justify mt-4">
+                    <p>Some things I know better than others but I'm constantly learning and trying to get on. I also can work with: Java, TFS, Visual Studio, Git, Subversion, MySQL. I would love to try the Node ecosystem and the MEAN stack in a real-life scenario and outside the courses I did.</p>
+                    <p>Currently, I'm developing an application using .NET Core as a RESTful API, Angular 8 as the front-end and SQL Server as the database. Everything is hosted on Azure.</p>
+                    <p>I believe that <strong>soft-skills</strong> should'nt be <i>soft</i> at all, that's why I'm always trying to improve my <strong>critical thinking</strong>, <strong>sense of collaboration</strong>, <strong>self-motivation</strong> and <strong>curiosity</strong>. I'm not a great communicator but, be sure I'll be giving my best.</p>
+                </div>
+            </nb-card-body>
+            <nb-card-footer>
+                <button fullWidth nbButton outline size="tiny" [ngx-scroll-to]="'#top'" [ngx-scroll-to-offset]="-100" nbTooltip="Go up">
+                    <nb-icon icon="arrowhead-up-outline"></nb-icon>
+                </button>
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0">
+        <nb-card accent="primary">
+            <nb-card-header id="what-i-can-do">WHAT I CAN DO</nb-card-header>
+            <nb-card-body class="text-center">
+                <div class="row">
+                    <div class="col-6">
+                        <nb-icon icon="code-outline" class="icon-4rem" status="danger"></nb-icon>
+                        <h5>CLEAN CODE</h5>
+                        <p>So elegant and easy to maintain that every person will enjoy reading it.</p>
+                    </div>
+                    <div class="col-6">
+                        <nb-icon icon="monitor-outline" class="icon-4rem" status="danger"></nb-icon>
+                        <h5>RESPONSIVE UI</h5>
+                        <p>Websites developed with mobile-first technologies to look beautiful in every screen.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <nb-icon icon="cloud-upload-outline" class="icon-4rem" status="danger"></nb-icon>
+                        <h5>CLOUD DEVELOPMENT</h5>
+                        <p>Deployment and management of your services and databases on <a href="http://azure.com" target="_blank">Azure</a>.</p>
+                    </div>
+                    <div class="col-6">
+                        <nb-icon icon="shield-outline" class="icon-4rem" status="danger"></nb-icon>
+                        <h5>MAINTENANCE</h5>
+                        <p>Improvements and additions to existing and new applications.</p>
+                    </div>
+                </div>
+            </nb-card-body>
+            <nb-card-footer>
+                <button fullWidth nbButton status="primary" outline size="tiny" [ngx-scroll-to]="'#top'" [ngx-scroll-to-offset]="-100" nbTooltip="Go up">
+                    <nb-icon icon="arrowhead-up-outline"></nb-icon>
+                </button>
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0">
+        <nb-card accent="primary">
+            <nb-card-header id="recent-work">RECENT WORK</nb-card-header>
+            <nb-card-body>
+                <p class="mb-5">You can visit my <a href="https://github.com/n6ither" target="_blank">Github</a> account to find some of my public repos. If you want, I can show you the private ones too.</p>
+
+                <nb-tabset>
+                    <nb-tab tabTitle="Top Words">
+                        <h6>Wait, what?</h6>
+
+                        <div class="text-center">
+                            <img src="assets/cv/img/topwords1.PNG" alt="Top Words" class="img-responsive mb-3">
+                        </div>
+
+                        <div class="text-justify">
+                            <p>A pointless but funny app I did to learn a couple of things.</p>
+                            <p>This little app was made using <a href="https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.2" target="_blank">ASP.NET Core</a>. It consists of a web API documented with <a href="https://swagger.io/" target="_blank">Swagger</a> (you can check it <a href="/swagger" target="_blank">here</a>) and a simple <a href="https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-2.2&tabs=visual-studio" target="_blank">Razor page</a> with <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>.</p>
+                            <p>The key here was to learn two technologies new to me. On the one hand, how a <a href="https://en.wikipedia.org/wiki/Web_crawler" target="_blank">web crawler</a> work. In this case I'm using <a href="https://github.com/sjdirect/abot" target="_blank">Abot</a>. On the other hand, I wanted to implement notifications from the server to the client (<a href="https://en.wikipedia.org/wiki/WebSocket" target="_blank">web socket</a>). For this, I used <a href="https://dotnet.microsoft.com/apps/aspnet/signalr" target="_blank">SignalR</a>.</p>
+                            <p>I draw inspiration from <a href="https://loudwire.com/most-commonly-used-word-slipknot-lyrics/" target="_blank">this</a> article.</p>
+                            <p>You can find the sorce code on <a href="https://github.com/n6ither/top-words" target="_blank">Github</a>.</p>
+                            <p>Everything is hosted on a free tier <a href="http://azure.com">Azure</a> App Service and connected to the repository so, everytime there's a <i>push</i> the app is deployed to Azure.</p>
+                            <p>The application <strong>does not</strong> save the lyrics anywhere. It's just a very basic algorithm that counts words frequency.</p>
+                            <p><strong>Try it </strong><a href="http://topwords.azurewebsites.net" target="_blank">here!</a></p>
+                        </div>
+                    </nb-tab>
+                    <nb-tab tabTitle="Ziggurat">
+                        <div class="text-justify">
+                            <h6>Gym management tool</h6>
+                            <p>Handle your gym information like a charm!</p>
+                            <p>Ziggurat is capable of keeping track of your members and their memberships, payments and check ins. With a beautiful and intuitive UI to keep it simple always.</p>
+                        </div>
+
+                        <div class="text-center">
+                            <img src="assets/cv/img/ziggurat1.png" alt="Ziggurat" class="img-responsive mb-3">
+                            <img src="assets/cv/img/ziggurat2.png" alt="Ziggurat" class="img-responsive mb-3">
+                            <img src="assets/cv/img/ziggurat3.png" alt="Ziggurat" class="img-responsive mb-3">
+                            <img src="assets/cv/img/ziggurat4.png" alt="Ziggurat" class="img-responsive mb-3">
+                            <img src="assets/cv/img/ziggurat5.png" alt="Ziggurat" class="img-responsive mb-3">
+                            <img src="assets/cv/img/ziggurat6.png" alt="Ziggurat" class="img-responsive mb-3">
+                        </div>
+                    </nb-tab>
+                    <nb-tab tabTitle="My thesis">
+                        <div class="text-justify">
+                            <h6>Finally it's here!</h6>
+                            <p>Its title is 'Performance benchmark entre SQL Server y MongoDB: un acercamiento con enfoque en el modelo de datos' or something like <strong>'Performance benchmark between SQL Server and MongoDB: an approach focused on the data model'</strong>.</p>
+                            <p>Here is the <strong>abstract</strong></p>
+
+                            <p>This research consists in performing a comparison of the performance of relational and document-oriented
+                                databases. To remove the generic aspect from the previous sentence, it must be remembered that the same
+                                title of the research focuses on the data model, that is, it tries to go a step beyond that of a simple
+                                benchmarking using a single table.</p>
+
+                            <p>The database engines to be used are two: SQL Server as the relational implementation and MongoDB on
+                                behalf of the document-oriented model. The databases used are four, two relational and two documentoriented. The original databases are derived from two application domains. One domain is naturally
+                                relational and the other is naturally non-relational. The idea of the investigation is to use the two original
+                                databases and create two databases derived in the other model, thus obtaining the four databases to be
+                                used.
+                            </p>
+
+                            <p>Through the execution of tests, it will be tried to establish the performance for each one of the study
+                                variables: CPU, RAM and response time. Once analyzed the results, it will be tried to establish if the
+                                application domains had better results in their natural implementations or not.</p>
+
+                            <p>This research will allow the reader to have an overview of the functioning of the relational databases, the
+                                document-oriented database, and the techniques for capture and analysis of data involved in a
+                                benchmarking.</p>
+                        </div>
+
+                        <div class="text-center">
+                            <img src="assets/cv/img/licenciado.JPG" alt="College degree" class="img-responsive mb-3">
+                        </div>
+                    </nb-tab>
+                    <nb-tab tabTitle="Brugnner">
+                        <div class="text-justify">
+                            <h6>Hello!</h6>
+                            <p>This blog, app, resume, portfolio, personal site, whatever you want to call it. I've been working on this to practice some Angular and API design.</p>
+                            <p>It started as a static HTML site (you can check the <a href="../../assets/cv/index.html" target="_blank">old version here</a>) and then I wanted to add some movement to it so I changed everything. The previous version was built upon a free template so, there is a lot jQuery plugins. Now, the front end is done with Angular 8 based on Nebular and there's an API running on an Azure App Service made with .NET Core.</p>
+                            <p>The database (cough, cough) is a collection of XML files. I did'nt want to pay for a relational database on the cloud for now.</p>
+                            <p>Finally, the project is managed using Azure DevOps.</p>
+                        </div>
+                    </nb-tab>
+                </nb-tabset>
+            </nb-card-body>
+            <nb-card-footer>
+                <button fullWidth nbButton outline size="tiny" [ngx-scroll-to]="'#top'" [ngx-scroll-to-offset]="-100" nbTooltip="Go up">
+                    <nb-icon icon="arrowhead-up-outline"></nb-icon>
+                </button>
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0">
+        <nb-card accent="primary">
+            <nb-card-header id="resume">RESUME</nb-card-header>
+            <nb-card-body>
+                <nb-accordion>
+                    <nb-accordion-item>
+                        <nb-accordion-item-header class="text-danger">
+                            <nb-icon icon="briefcase"></nb-icon>
+                            Experience
+                        </nb-accordion-item-header>
+                        <nb-accordion-item-body>
+                            <p><strong>Software analyst & developer @ Oversoft</strong></p>
+                            <p><i>2015 - present</i></p>
+
+                            <ul class="text-justify">
+                                <li>
+                                    Responsible for the design and development of applications that communicate the main product with systems and interfaces of makes such as Volkswagen, Mercedes Benz, Toyota and IVECO.
+                                </li>
+                                <li>
+                                    Development and implementation of new functionalities and bug fixing in the legacy products of the company.
+                                </li>
+                                <li>
+                                    Participation in the analysis, design and development of the new flagship product implementing an architecture based on microservices and SCRUM methodologies.
+                                </li>
+                                <li>
+                                    Workshops and in-person training, calls and videoconferences completely in English with teams from Europe and Asia.
+                                </li>
+                                <li>
+                                    Professional Growth Award 2016
+                                </li>
+                            </ul>
+                        </nb-accordion-item-body>
+                    </nb-accordion-item>
+
+                    <nb-accordion-item>
+                        <nb-accordion-item-header class="text-danger">
+                            <nb-icon icon="book"></nb-icon>
+                            Education
+                        </nb-accordion-item-header>
+                        <nb-accordion-item-body>
+                            <p><strong>Licenciatura en Informática</strong></p>
+                            <p><i>2015 - 2019</i></p>
+
+                            <ul class="text-justify">
+                                <li>
+                                    Thesis about a performance benchmark between SQL Server and MongoDB with a focus on the problem domain.
+                                </li>
+                                <li>
+                                    Development of simulators of discrete and continuous processes.
+                                </li>
+                            </ul>
+
+                            <hr>
+
+                            <p><strong>English</strong></p>
+                            <p><i>2018 - 2018</i></p>
+
+                            <ul class="text-justify">
+                                <li>
+                                    Jumped to the last year after entry exam.
+                                </li>
+                                <li>
+                                    Reading, speaking, writing and listening level B1+.
+                                </li>
+                            </ul>
+
+                            <hr>
+
+                            <p><strong>Analista de Sistemas de Información</strong></p>
+                            <p><i>2011 - 2015</i></p>
+
+                            <ul class="text-justify">
+                                <li>
+                                    I discovered my passion for object-oriented programming.
+                                </li>
+                                <li>
+                                    Development of skills in .NET and SQL.
+                                </li>
+                                <li>
+                                    Complete understanding of the development process from gathering customer's requirements, analysis, design, implementation and testing.
+                                </li>
+                            </ul>
+                        </nb-accordion-item-body>
+                    </nb-accordion-item>
+
+                    <nb-accordion-item>
+                        <nb-accordion-item-header class="text-danger">
+                            <nb-icon icon="star"></nb-icon>
+                            Courses
+                        </nb-accordion-item-header>
+                        <nb-accordion-item-body>
+                            <p><strong>Udemy</strong></p>
+                            <p><i>2017 - 2018</i></p>
+
+                            <ul class="text-justify">
+                                <li>
+                                    Angular (Angular 2 or 4) & NodeJS - The MEAN Stack Guide
+                                    <p>UC-0GYT3N2A</p>
+                                </li>
+                                <li>
+                                    Build a Real-world App with ASP.NET Core and Angular 2 (4+)
+                                    <p>UC-KTX0OR7G</p>
+                                </li>
+                                <li>
+                                    C# Advanced Topics: Take Your C# Skills to the Next Level
+                                    <p>UC-R7DWEMQZ</p>
+                                </li>
+                                <li>
+                                    C# Developers: Learn the Art of Writing Clean Code
+                                    <p>UC-ZGCV8VBB</p>
+                                </li>
+                                <li>
+                                    Desarrollo web con JavaScript, Angular, NodeJS y MongoDB
+                                    <p>UC-WHUSCQDG</p>
+                                </li>
+                                <li>
+                                    Design Patterns in C# and .NET
+                                    <p>UC-GZG6TZ6U</p>
+                                </li>
+                                <li>
+                                    Entity Framework in Depth: The Complete Guide
+                                    <p>UC-R4J891KU</p>
+                                </li>
+                                <li>
+                                    Programming in Microsoft C# - Exam 70-483
+                                    <p>UC-5J89AWSF</p>
+                                </li>
+                            </ul>
+                        </nb-accordion-item-body>
+                    </nb-accordion-item>
+                </nb-accordion>
+            </nb-card-body>
+            <nb-card-footer>
+                <button fullWidth nbButton status="primary" outline size="tiny" [ngx-scroll-to]="'#top'" [ngx-scroll-to-offset]="-100" nbTooltip="Go up">
+                    <nb-icon icon="arrowhead-up-outline"></nb-icon>
+                </button>
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0">
+        <nb-card accent="primary">
+            <nb-card-header id="contact">CONTACT</nb-card-header>
+            <nb-card-body>
+                <h6>Let's work together!</h6>
+                <p>I'm available for freelance opportunities.</p>
+                <a nbButton outline status="danger" href="mailto:nery.brugnoni@gmail.com">
+                    <nb-icon icon="email-outline"></nb-icon> Send me an email
+                </a>
+            </nb-card-body>
+            <nb-card-footer>
+                <button fullWidth nbButton status="primary" outline size="tiny" [ngx-scroll-to]="'#top'" [ngx-scroll-to-offset]="-100" nbTooltip="Go up">
+                    <nb-icon icon="arrowhead-up-outline"></nb-icon>
+                </button>
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>

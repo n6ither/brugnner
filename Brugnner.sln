@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brugnner.Tests", "tests\Brugnner.Tests\Brugnner.Tests.csproj", "{CD31D952-76F6-4010-92B4-E78BDE40CAED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brugnner.API", "src\Brugnner.API\Brugnner.API.csproj", "{F1975F44-64AE-4221-9482-C1072CB58417}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD31D952-76F6-4010-92B4-E78BDE40CAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD31D952-76F6-4010-92B4-E78BDE40CAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD31D952-76F6-4010-92B4-E78BDE40CAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD31D952-76F6-4010-92B4-E78BDE40CAED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1975F44-64AE-4221-9482-C1072CB58417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1975F44-64AE-4221-9482-C1072CB58417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1975F44-64AE-4221-9482-C1072CB58417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1975F44-64AE-4221-9482-C1072CB58417}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F182AEE-FD8D-44B7-BB8B-2083407E7EFE}
+	EndGlobalSection
+EndGlobal

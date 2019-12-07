@@ -1,0 +1,64 @@
+<div *ngIf="!isLoading" class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0">
+        <nb-card accent="danger" *ngIf="authService.loggedIn">
+            <nb-card-header>
+                <h1>Manage post</h1>
+            </nb-card-header>
+
+            <nb-card-body>
+                <div class="row">
+                    <div class="col-12">
+                        <a nbButton status="primary" routerLink="/admin/posts/edit/{{post.id}}" class="manage-button">Edit</a>
+                        <button nbButton status="primary" outline class="manage-button" (click)="togglePostPublished(post.id)">{{ togglePublicationButtonText }}</button>
+                        <button nbButton status="danger" class="manage-button" (click)="deletePost(post.id)">Delete</button>
+                    </div>
+                </div>
+            </nb-card-body>
+
+            <nb-card-footer>
+                <a routerLink="/admin">Manage all posts</a>
+            </nb-card-footer>
+        </nb-card>
+
+        <nb-card accent="primary">
+            <nb-card-header>
+                <h1 class="truncate">{{post.title}}</h1>
+
+                <div class="row subtitle">
+                    <div class="col-md-6 col-xs-12">
+                        <small>{{postsService.postDatesAndAuthor(post)}}</small>
+                    </div>
+                    <div class="col-md-6 col-xs-12 if-no-mobile-text-right">
+                        <small>
+                            <nb-icon icon="clock-outline"></nb-icon> {{postsService.readingTime(post)}}
+                        </small>
+                    </div>
+                </div>
+            </nb-card-header>
+
+            <nb-card-body>
+                <div innerHTML="{{post.content}}"></div>
+            </nb-card-body>
+
+            <nb-card-footer>
+                <a *ngFor="let tag of post.tags" href="/posts/tag/{{tag.name}}" class="mr-3">#{{tag.name}}</a>
+            </nb-card-footer>
+        </nb-card>
+    </div>
+</div>
+
+<div *ngIf="!isLoading" class="row">
+    <div class="col-md-10 offset-md-1 col-12 offset-0 text-center">
+        <a nbButton routerLink="/posts/{{post.previousPostSlug}}" class="m-1" nbTooltip="{{post.previousPostTitle}}">
+            <nb-icon icon="arrow-back-outline"></nb-icon>
+        </a>
+        <a nbButton routerLink="/posts" class="m-1" nbTooltip="Post list">
+            <nb-icon icon="list-outline"></nb-icon>
+        </a>
+        <a nbButton routerLink="/posts/{{post.nextPostSlug}}" class="m-1" nbTooltip="{{post.nextPostTitle}}">
+            <nb-icon icon="arrow-forward-outline"></nb-icon>
+        </a>
+    </div>
+</div>
+
+<app-spinner-card [condition]="isLoading"></app-spinner-card>

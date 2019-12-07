@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Post>
+  <Id>390000c6-f63a-4615-a69c-50759fd6a2e3</Id>
+  <Title>Number theory</Title>
+  <Excerpt>It is not known what these applications may have been, or whether there could have been any; Babylonian astronomy, for example, truly came into its own only later.</Excerpt>
+  <Content>&lt;p style="text-align: justify;"&gt;&lt;strong&gt;Number theory&lt;/strong&gt;&amp;nbsp;(or&amp;nbsp;&lt;strong&gt;arithmetic&lt;/strong&gt;&amp;nbsp;or&amp;nbsp;&lt;strong&gt;higher arithmetic&lt;/strong&gt;&amp;nbsp;in older usage) is a branch of&amp;nbsp;&lt;a href="\"&gt;pure mathematics&lt;/a&gt;&amp;nbsp;devoted primarily to the study of the&amp;nbsp;&lt;a href="\"&gt;integers&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href="\"&gt;integer-valued functions&lt;/a&gt;. German mathematician Carl Friedrich Gauss (1777&amp;ndash;1855) said, &amp;quot;Mathematics is the queen of the sciences&amp;mdash;and number theory is the queen of mathematics.&amp;quot;&lt;a href="\"&gt;[1]&lt;/a&gt;&amp;nbsp;Number theorists study&amp;nbsp;&lt;a href="\"&gt;prime numbers&lt;/a&gt;&amp;nbsp;as well as the properties of objects made out of integers (for example,&amp;nbsp;&lt;a href="\"&gt;rational numbers&lt;/a&gt;) or defined as generalizations of the integers (for example,&amp;nbsp;&lt;a href="\"&gt;algebraic integers&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p style="text-align: justify;"&gt;Integers can be considered either in themselves or as solutions to equations (&lt;a href="\"&gt;Diophantine geometry&lt;/a&gt;). Questions in number theory are often best understood through the study of&amp;nbsp;&lt;a href="\"&gt;analytical&lt;/a&gt;&amp;nbsp;objects (for example, the&amp;nbsp;&lt;a href="\"&gt;Riemann zeta function&lt;/a&gt;) that encode properties of the integers, primes or other number-theoretic objects in some fashion (&lt;a href="\"&gt;analytic number theory&lt;/a&gt;). One may also study&amp;nbsp;&lt;a href="\"&gt;real numbers&lt;/a&gt;&amp;nbsp;in relation to rational numbers, for example, as approximated by the latter (&lt;a href="\"&gt;Diophantine approximation&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p style="text-align: justify;"&gt;The older term for number theory is&amp;nbsp;&lt;em&gt;arithmetic&lt;/em&gt;. By the early twentieth century, it had been superseded by &amp;quot;number theory&amp;quot;.&lt;a href="\"&gt;[note 1]&lt;/a&gt;&amp;nbsp;(The word &amp;quot;&lt;a href="\"&gt;arithmetic&lt;/a&gt;&amp;quot; is used by the general public to mean &amp;quot;&lt;a href="\"&gt;elementary calculations&lt;/a&gt;&amp;quot;; it has also acquired other meanings in&amp;nbsp;&lt;a href="\"&gt;mathematical logic&lt;/a&gt;, as in&amp;nbsp;&lt;em&gt;&lt;a href="\"&gt;Peano arithmetic&lt;/a&gt;&lt;/em&gt;, and&amp;nbsp;&lt;a href="\"&gt;computer science&lt;/a&gt;, as in&amp;nbsp;&lt;em&gt;&lt;a href="\"&gt;floating point arithmetic&lt;/a&gt;&lt;/em&gt;.) The use of the term&amp;nbsp;&lt;em&gt;arithmetic&lt;/em&gt;&amp;nbsp;for&amp;nbsp;&lt;em&gt;number theory&lt;/em&gt;&amp;nbsp;regained some ground in the second half of the 20th century, arguably in part due to French influence.&lt;a href="\"&gt;[note 2]&lt;/a&gt;&amp;nbsp;In particular,&amp;nbsp;&lt;em&gt;arithmetical&lt;/em&gt;&amp;nbsp;is preferred as an adjective to&amp;nbsp;&lt;em&gt;number-theoretic&lt;/em&gt;.&lt;/p&gt;
+</Content>
+  <Slug>number-theory</Slug>
+  <Tags>
+    <Tag>number-theory</Tag>
+    <Tag>math</Tag>
+    <Tag>science</Tag>
+  </Tags>
+  <CreatedAt>2018-12-30T19:05:25.5531135-03:00</CreatedAt>
+  <UpdatedAt>2019-12-05T18:43:07.523375-03:00</UpdatedAt>
+  <IsPublished>true</IsPublished>
+  <PreviousPostTitle>Jazz</PreviousPostTitle>
+  <PreviousPostSlug>jazz</PreviousPostSlug>
+  <NextPostTitle>Mathematics</NextPostTitle>
+  <NextPostSlug>math</NextPostSlug>
+</Post>

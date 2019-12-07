@@ -1,0 +1,12 @@
+<div class="col-md-10 offset-md-1">
+    <nb-card>
+        <nb-card-header>{{title}}</nb-card-header>
+        <nb-card-body>
+            {{text}}
+        </nb-card-body>
+        <nb-card-footer class="text-right">
+            <button nbButton status="danger" (click)="yes()" class="mr-2">Yes</button>
+            <button nbButton outline status="primary" (click)="no()">No</button>
+        </nb-card-footer>
+    </nb-card>
+</div>

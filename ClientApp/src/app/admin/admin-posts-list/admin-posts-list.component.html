@@ -1,0 +1,49 @@
+<nb-card accent="danger">
+    <nb-card-header>Posts</nb-card-header>
+    <nb-card-body>
+        <a nbButton fullWidth status="primary" class="mb-4" routerLink="posts/new">New</a>
+        <input type="text" fullWidth class="searchbar mb-2" nbInput placeholder="Write something.." status="basic" [(ngModel)]="searchTerm">
+        <button nbButton fullWidth outline status="primary" (click)="search()">Search</button>
+    </nb-card-body>
+</nb-card>
+
+<nb-list *ngIf="!isLoading">
+    <nb-list-item *ngFor="let post of posts">
+        <nb-card accent="danger">
+            <nb-card-header>
+                <a routerLink="/posts/{{post.slug}}">
+                    <h2 class="truncate">{{post.title}}</h2>
+                </a>
+            </nb-card-header>
+
+            <nb-card-body>
+                <dl>
+                    <dt>Id</dt>
+                    <dd>{{post.id}}</dd>
+                    <dt>Excerpt</dt>
+                    <dd>{{post.excerpt}}</dd>
+                    <dt>Created at</dt>
+                    <dd>{{post.createdAt | datetime}}</dd>
+                    <dt>Updated at</dt>
+                    <dd>{{post.updatedAt | datetime}}</dd>
+                    <dt>Is published</dt>
+                    <dd>{{post.isPublished | booleanToEnglish:true}}</dd>
+                    <dt>Tags</dt>
+                    <dd>
+                        <a *ngFor="let tag of post.tags" href="/tag/{{tag.name}}" class="mr-3">#{{tag.name}}</a>
+                    </dd>
+                </dl>
+            </nb-card-body>
+
+            <nb-card-footer>
+                <div class="row">
+                    <a nbButton status="primary" routerLink="posts/edit/{{post.id}}" class="m-1">Edit</a>
+                    <button nbButton status="primary" outline class="m-1" (click)="togglePostPublished(post.id)">{{ post.isPublished ? 'Unpublish' : 'Publish' }}</button>
+                    <button nbButton status="danger" class="m-1" (click)="deletePost(post.id)">Delete</button>
+                </div>
+            </nb-card-footer>
+        </nb-card>
+    </nb-list-item>
+</nb-list>
+
+<app-spinner-card [condition]="isLoading"></app-spinner-card>

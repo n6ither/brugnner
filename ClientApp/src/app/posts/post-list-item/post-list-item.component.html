@@ -1,0 +1,26 @@
+<nb-card accent="primary">
+    <nb-card-header>
+        <a routerLink="/posts/{{post.slug}}">
+            <h2 class="truncate">{{post.title}}</h2>
+        </a>
+
+        <div class="row subtitle">
+            <div class="col-md-6 col-xs-12">
+                <small>{{postsService.postDatesAndAuthor(post)}}</small>
+            </div>
+            <div class="col-md-6 col-xs-12 if-no-mobile-text-right">
+                <small>
+                    <nb-icon icon="clock-outline"></nb-icon> {{postsService.readingTime(post)}}
+                </small>
+            </div>
+        </div>
+    </nb-card-header>
+
+    <nb-card-body>
+        <p>{{post.excerpt}}</p>
+    </nb-card-body>
+
+    <nb-card-footer>
+        <a *ngFor="let tag of post.tags" href="/posts/tag/{{tag.name}}" class="mr-3">#{{tag.name}}</a>
+    </nb-card-footer>
+</nb-card>

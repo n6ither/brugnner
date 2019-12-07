@@ -1,0 +1,37 @@
+@import '../theme/styles/themes';
+@import '~@nebular/theme/styles/global/breakpoints';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+@include nb-install-component() {
+  nb-progress-bar ~ nb-progress-bar {
+    margin-top: 1rem;
+  }
+
+  .links {
+    text-align: center;
+  }
+  .links button {
+    margin: 10px;
+    text-transform: none;
+  }
+
+  .icon-4rem {
+    font-size: 4rem;
+  }
+
+  .img-responsive {
+    width: 50%;
+    height: 50%;
+  }
+
+nb-icon {
+  margin:0 !important;
+}
+
+  @include media-breakpoint-down(sm) {
+    .img-responsive {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

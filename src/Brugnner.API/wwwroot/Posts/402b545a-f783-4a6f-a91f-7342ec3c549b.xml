@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Post>
+  <Id>402b545a-f783-4a6f-a91f-7342ec3c549b</Id>
+  <Title>Teeeeeeeesting create</Title>
+  <Excerpt>aaaaaaaaaaaaaaaaaaaaaaaaaaa</Excerpt>
+  <Content>&lt;p&gt;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&lt;/p&gt;
+</Content>
+  <Slug>teeeeeeeesting-create</Slug>
+  <Tags>
+    <Tag>aaaaaaaaa</Tag>
+    <Tag>hhh</Tag>
+  </Tags>
+  <CreatedAt>2019-11-28T16:27:47.554149-03:00</CreatedAt>
+  <UpdatedAt p2:nil="true" xmlns:p2="http://www.w3.org/2001/XMLSchema-instance" />
+  <IsPublished>true</IsPublished>
+</Post>
